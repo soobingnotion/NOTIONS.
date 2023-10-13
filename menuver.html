@@ -61,6 +61,7 @@
 <body>
 
 	<nav class="navMenu border background rounded">
+		<a id="homepage" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-rectangle-list" style="color: #ffd43b;"></i> homepage</a>
 		<a id="productivity" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase" style="color: #f39800;"></i> productivity</a>
 		<a id="school" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap" style="color: #f39800;"></i> school</a>
 		<a id="leisure" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-gamepad" style="color: #f39800;"></i> leisure</a>
@@ -74,7 +75,7 @@
 		<a id="personal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user" style="color: #f39800;"></i> personal</a>
 		<a id="manifest" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-star" style="color: #f39800;"></i> manifest</a>
 		<a id="others" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-seedling" style="color: #f39800;"></i> others</a>
-		<a id="homepage" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-rectangle-list" style="color: #ffd43b;"></i> homepage</a>
+		
 	</nav>
 
 
@@ -88,7 +89,9 @@
 
 		function navigate(id) {
 
-			if (id == 'productivity')
+			if (id == 'homepage')
+				window.open("https://www.notion.so/2c3506c3e5224a87880ed3b38e2e8550", '_parent').focus();
+			else if (id == 'productivity')
 				window.open("https://www.notion.so/PRODUCTIVITY-99fba178dde5435f9befe622badad6a5", '_parent').focus();
 			else if (id == 'school')
 				window.open("https://www.notion.so/SCHOOL-16f107273c7945869ef9b27586c84a7d", '_parent').focus();
@@ -114,8 +117,7 @@
 				window.open("https://www.notion.so/MANIFEST-3afd5c0d95f142668cd834d14af167f1", '_parent').focus();
 			else if (id == 'others')
 				window.open("https://www.notion.so/OTHERS-b3dffddb79d941b1af9e4b7ef42031e7", '_parent').focus();
-			else if (id == 'homepage')
-				window.open("https://www.notion.so/2c3506c3e5224a87880ed3b38e2e8550", '_parent').focus();
+			
 		}
 	</script>
 
